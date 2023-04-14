@@ -1,0 +1,132 @@
+
+.detailcontainer {
+
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "detailname detailname detailname detailname detailname detailname detailname detailname detailname detailname detailname detailfavourite detailfavourite"
+    "detailname detailname detailname detailname detailname detailname detailname detailname detailname detailname detailname detailfavourite detailfavourite"
+    "detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen"
+    "detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen"
+    "detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen"
+    "detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detaildietsfavourite detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen"
+    "detailranking detailranking detailranking detailranking detailranking detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen"
+    "detailranking detailranking detailranking detailranking detailranking detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen detailimagen"
+    "detailcoments detailcoments detailcoments detailcoments detailcoments detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary"
+    "detailcoments detailcoments detailcoments detailcoments detailcoments detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary"
+    "detailcoments detailcoments detailcoments detailcoments detailcoments detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary"
+    "detailcoments detailcoments detailcoments detailcoments detailcoments detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary"
+    "detailcoments detailcoments detailcoments detailcoments detailcoments detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary detailsummary"; 
+
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1em; 
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1; 
+ }
+
+ .detailname { 
+  grid-area: detailname; 
+}
+
+.detailimagen { 
+  grid-area: detailimagen; 
+  margin-top: 30px;
+}
+
+ .fontimg {
+  border-radius: 4px;
+ }
+
+ .detaildietsfavourite { 
+  margin-top: 30px;
+  padding-left: 4em;
+  grid-area: detaildietsfavourite; 
+}
+
+.detaildietstittle {
+  font-size: 35px;
+}
+
+.detaildiets {
+  font-size: 20px;
+}
+
+.detailfavourite { 
+  grid-area: detailfavourite;
+}
+
+.detailranking { 
+  grid-area: detailranking; 
+  padding-left: 4em;
+}
+
+.detailsummary { 
+  margin-top: 50px;
+  grid-area: detailsummary;
+ }
+
+ .detailsummarytext  {
+  font-size: 20px;
+ }
+
+ .detailcoments { 
+  padding-left: 4em;
+  grid-area: detailcoments; 
+}
+
+ .favouritebtn{
+  display: flex;
+  align-items: center;
+  color: #000;
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  position: relative;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: monospace;
+  transition: linear .3s;
+ }
+
+ .favouritebtn:hover {
+  color: #fff;
+}
+
+.favouritebtn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(100% + 4px));
+  width: 45px;
+  height: 45px;
+  background-color: #00fe2f;
+  border-radius: 50px;
+  transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+  z-index: -1;
+}
+
+.favouritebtn:hover:before {
+  width: 100%;
+  transform: translateY(-50%) translateX(-18px);
+  transition: transform .25s cubic-bezier(0,0,.5,2);
+}
+.buttonVote, .buttonCreatePost{
+  color:#777777;
+  border-color:#dcdcdc;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  text-shadow:inset 0px 1px 0px #ffffff;
+  background:linear-gradient(#ededed, #dfdfdf);
+}
+
+.buttonVote, .buttonCreatePost:hover {
+    background: linear-gradient(#dfdfdf, #ededed);
+  }

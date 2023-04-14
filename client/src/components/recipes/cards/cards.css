@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Fraunces:opsz@9..144&family=Merriweather:ital,wght@0,300;1,300&family=Oswald:wght@300;400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,700;1,8..144,300&display=swap');
+
+h1{
+    font-family: Cutive, serif;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(125, 230, 155);
+    text-shadow: rgba(0, 0, 0, 0.96) 2px 2px 2px;
+    padding: 15px;
+}
+.CardsRecipes{
+    margin: auto;
+    max-width: 70%;
+    min-height: 900px;
+}
+
+.CardHeader h1{
+    display: flex;
+    padding-top: 200px;
+    align-items:baseline;
+    margin: auto;
+    min-height: 700px;
+}
+
+.OrdenRankingRecipes{
+    display: flex;
+    
+}
+
+.OrdenRankingRecipes .form-select{
+    max-width: 250px;
+}
+
+.options-recipes{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#content-card{
+    display: flex;
+    min-height: 700px;
+    justify-content: center;
+}
+
+.Links{
+    text-decoration: none;
+}
+.pagination{
+    padding: 10px;
+}

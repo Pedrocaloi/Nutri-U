@@ -1,0 +1,203 @@
+
+
+
+
+ .profileprincipal {
+    display: grid; 
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "username1 username1 username1 username1 username1 username1 . userimage userimage userimage"
+      "userinformation userinformation userinformation . . . . userimage userimage userimage"
+      "userinformation userinformation userinformation saveimageprofile . . . userimage userimage userimage"
+      "yourpost yourpost yourpost yourpost mylists mylists mylists selectyourlist selectyourlist selectyourlist"
+      "yourpost yourpost yourpost yourpost mylists mylists mylists selectyourlist selectyourlist selectyourlist"
+      "yourpost yourpost yourpost yourpost mylists mylists mylists selectyourlist selectyourlist selectyourlist"
+      "yourpost yourpost yourpost yourpost mylists mylists mylists selectyourlist selectyourlist selectyourlist"
+      "yourpost yourpost yourpost yourpost mylists mylists mylists selectyourlist selectyourlist selectyourlist"
+      "yourpost yourpost yourpost yourpost mylists mylists mylists selectyourlist selectyourlist selectyourlist"
+      "yourpost yourpost yourpost yourpost mylists mylists mylists selectyourlist selectyourlist selectyourlist";
+  
+
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 1em; 
+    background: #f9f9f9;
+    
+    
+}
+
+
+
+ 
+
+.upload1 { 
+    position: absolute;
+    margin-right: 200px;
+}
+
+.saveimageprofile { 
+    grid-area: saveimageprofile; 
+}
+
+.modifyibmbtn {
+    margin-top: 10%;
+}
+
+.saveimageprofile {
+    margin-bottom: 3%;
+    width: 95%;
+    color: #090909;
+    padding: 0.3em;
+    font-size: 80%;
+    border-radius: 10%;
+    background: #c2c2c2;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+   }
+   
+   .saveimageprofile:hover {
+    border: 1px solid white;
+   }
+   
+   .saveimageprofile:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
+
+
+.userinformation { 
+    margin-top: 30%;
+    margin-left: 13%;
+    grid-area: userinformation; 
+    padding: 1em; 
+    background:  #f0f0f0;
+    border: 1px solid #c1c1c1; 
+    height: 110%;
+    border-radius: 4%;
+}
+
+.modifyibm {
+    margin-left: 50px;
+}
+
+ 
+
+.selectyourlist { 
+    grid-area: selectyourlist;
+    margin-right: 10%;
+    padding: 3em;
+    margin-top: 42%;
+ }
+
+ .mylists { 
+    grid-area: mylists; 
+    margin-top: 52%;
+}
+
+.yourpost { 
+    margin-top: 30%;
+    padding: 3em;
+    grid-area: yourpost;
+ }
+
+ .ButtonNewLIst, .buttonEdit, .buttonDelete{
+  color:#777777;
+  border-color:#dcdcdc;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  text-shadow:inset 0px 1px 0px #ffffff;
+  background:linear-gradient(#ededed, #dfdfdf);
+}
+
+.buttonListName,.ButtonNewLIst, .buttonEdit, .buttonDelete:hover {
+    background: linear-gradient(#dfdfdf, #ededed);
+  }
+.post{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 15px;
+} 
+
+.profiledetalles h3{
+    display: flex;
+    
+    font-size: 25px;
+    align-items: center;
+}
+
+.profiledetalles{
+    
+    min-width: 250px;
+    margin-top: 30px;
+}
+
+.postImgSave{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+/* .modifyibmbtn {
+    text-decoration: none;
+    margin-left: 8%;
+
+    margin-right: 30%;
+    color: #090909;
+    padding: 0.4em 1.7em;
+    font-size: 100%;
+    border-radius: 10%;
+    background: #c2c2c2;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+   }
+   
+   .modifyibmbtn:hover {
+    border: 1px solid white;
+   }
+   
+   .modifyibmbtn:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   } */
+   .profile-arriba{
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+    margin-top: 3%;
+   }
+
+   .username1 { 
+    width: 300px;
+    font-size: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+ }
+
+ .userimage1 {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    
+    border-radius: 150px;
+    border: solid 2px rgb(99, 99, 99);
+}
+
+
+.userimage {
+    margin-top: 1%;
+    min-width: 300px;
+    max-height: 300px;
+    grid-area: userimage;
+}
+
+.userimage h3{
+    margin-top: 1%;
+    width: 300px;
+    height: 300px;
+}
+
